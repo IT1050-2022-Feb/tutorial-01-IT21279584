@@ -14,6 +14,23 @@ sum = 1+2+3+...+10 = 55 */
 #include <stdio.h>
 int main() {
   
+  //declare variables
+  int i;
+  int n;
+  int sum = 0;
+
+    /* Input upper limit from user */
+    printf( "Enter upper limit: " );
+    scanf( "%d", &n );
+
+    /* Find sum of all numbers */
+    for( i = 1; i <= n; i++ )
+    {
+        sum += i;
+    }
+
+    printf( "Sum of numbers = %d", sum );//Display sum of numbers
+  
   return 0;
 }
 
